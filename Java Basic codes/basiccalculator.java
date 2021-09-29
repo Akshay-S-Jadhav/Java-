@@ -36,11 +36,18 @@ public class basiccalculator {
             case 3:
                 System.out.println("Multiplication of the number is : "+ (a*b));
                 break;
-            case 4:
-                System.out.println("Division of the number is : "+ (a/b));
+            case 4: if(b == 0){
+                    System.out.println("Invalid Division");
+                    }else {
+                    System.out.println("Division of the number is : "+ (a/b));
+                    }
                 break;
-            case 5:
-                System.out.println("Remainder or Modulo of the number is : "+ (a%b));
+                
+            case 5: if(b == 0){
+                        System.out.println("Invalid Division");
+                    }else {
+                        System.out.println("Remainder or Modulo of the number is : "+ (a%b));
+                    }
                 break;
             default:
                 System.out.println("Invalid Operation Input");
